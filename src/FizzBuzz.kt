@@ -1,7 +1,9 @@
 class FizzBuzz{
     fun perform(number: Int) :String {
-        if (number == 3) return "Fizz"
-        if (number == 1) return "1"
-        return "2"
+        if (isDivisible(number, 3)) return "Fizz"
+        if (isDivisible(number, 5)) return "Buzz"
+        return number.toString()
     }
+
+    private fun isDivisible(dividend: Int, divisor: Int) = dividend % divisor == 0
 }
