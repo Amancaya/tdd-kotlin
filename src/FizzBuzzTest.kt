@@ -43,4 +43,14 @@ class FizzBuzzTest{
      fun `returns Buzz when recives 10`(){
           assertEquals("Buzz", fizzBuzz.perform(10))
      }
+
+     @Test
+     fun `returns FizzBuzz when recives 45`(){
+          assertEquals("FizzBuzz", fizzBuzz.perform(45))
+     }
+
+     @Test
+     fun `returns FizzBuzz when recives 15`(){
+          assertEquals("FizzBuzz", fizzBuzz.perform(15))
+     }
 }
